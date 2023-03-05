@@ -23,9 +23,9 @@ function getArea(α, β, ŋ)
     println("Area of $ŋ is ", round(μ, digits=4))
 end
 
-α = 0.5
-β = 10
-case1 = β - 5
+α = 8
+β = 14
+case1 = 9 - α
 
 validateNumber(α, β, 1)
 getAverage(α, β)
