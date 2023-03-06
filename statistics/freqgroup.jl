@@ -4,15 +4,18 @@ struct Freq
     to
 end
 
-data = [83,69,82,85,87,67,68,83,70,81,87,71,80,80,70,86,74,70]
-freqsData = [Freq(65.5, 71.5), Freq(71.5, 77.5), Freq(77.5, 83.5), Freq(83.5, 89.5)]
+data = [79,78, 66, 78, 84, 72, 78, 70, 72, 81, 70]
+freqsData = [Freq(66, 71), Freq(72, 77), Freq(78, 83), Freq(84, 89)]
 
 function groupFreqs(problem, freqs)
+    count = 0
     for freq in freqs
-        nums = filter(x -> freq.from <= x < freq.to, problem)
+        nums = filter(x -> freq.from <= x <= freq.to, problem)
         len = length(nums)
+        count += len
         println("Freq: $(freq.from) to $(freq.to): $nums and its length is $len")
     end
+    println("Total count: $count")
 end
 
 groupFreqs(data, freqsData)
