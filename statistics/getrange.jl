@@ -1,4 +1,4 @@
-problem = [9,20, 18,22, 11, 22, 15,4]
+problem = [89, 82, 73, 86, 89, 68, 94]
 
 function getRange(cases)
     max = maximum(cases)
