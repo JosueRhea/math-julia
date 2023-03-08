@@ -5,10 +5,10 @@ function getProbability(case1, total1, case2, total2)
     println("Result is: $(result1 * result2)")
 end
 
-case1 = 10
-total1 = 20
+case1 = 51
+total1 = 51 + 459
 
-case2 = 1
-total2 = 2
+case2 = 120
+total2 = 120 + 280
 
 getProbability(case1, total1, case2, total2)

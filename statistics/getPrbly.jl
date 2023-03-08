@@ -3,7 +3,7 @@ struct Case
     result
 end
 
-problem = [Case(246, "Rojo"),Case(146, "Amarillo"), Case(108, "Azul")]
+problem = [Case(266, "Rojo"),Case(136, "Amarillo"), Case(98, "Azul")]
 
 function getExperimentalProbability(cases::Array{Case}, result) 
     count = 0
@@ -25,5 +25,5 @@ function getTeoricProbability(cases::Array{Case}, posibleResultsTotal, num)
     println("Teoric Probability ", (num * total) /(posibleResultsTotal * total))
 end
 
-getExperimentalProbability(problem, "Azul")
-getTeoricProbability(problem, 30, 2)
+getExperimentalProbability(problem, "Rojo")
+getTeoricProbability(problem, 10, 5)
