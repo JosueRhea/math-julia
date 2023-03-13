@@ -10,8 +10,12 @@ function calcualte(total, possibleResults, count)
         a -= 1
         c -= 1
     end
-    println("Result is: $(round(prod(operations), digits=3))")
+    result = prod(operations)
+    println("Result is: $(round(result, digits=3))")
     println("a : $a, b: $b, c: $c")
+    return  result
 end
 
-calcualte(75, 20, 3)
+rsult1 = calcualte(50, 13,1)
+rsult2 = calcualte(49, 37,2)
+println(rsult1 * rsult2)

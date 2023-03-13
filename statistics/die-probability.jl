@@ -27,8 +27,9 @@ function calculateProbability(condition)
     println("Result is: $result")
 end
 
-condition1(x::Tuple{Int64, Int64}) = sum(x) > 5
-condition2(x::Tuple{Int64, Int64}) = sum(x) % 3 == 0 || sum(x) % 5 == 0 || (sum(x) % 3 == 0 && sum(x) % 5 == 0)
+condition1(x::Tuple{Int64, Int64}) = sum(x) > 8
+# condition2(x::Tuple{Int64, Int64}) = sum(x) % 4 == 0
+# condition2(x::Tuple{Int64, Int64}) = sum(x) % 3 == 0 || sum(x) % 5 == 0 || (sum(x) % 3 == 0 && sum(x) % 5 == 0)
 
 calculateProbability(condition1)
 calculateProbability(condition2)

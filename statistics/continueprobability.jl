@@ -23,11 +23,11 @@ function getArea(α, β, ŋ)
     println("Area of $ŋ is ", round(μ, digits=4))
 end
 
-α = 8
-β = 14
-case1 = 9 - α
+α = 415
+β = 288
+# case1 = 9 - α
 
-validateNumber(α, β, 1)
+# validateNumber(α, β, 1)
 getAverage(α, β)
 getStandardDeviation(α,β)
-getArea(α, β, case1)
+# getArea(α, β, case1)

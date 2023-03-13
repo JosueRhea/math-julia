@@ -10,7 +10,7 @@ function getPossibleResults(cases::Array{Case}, missing)
     println("Result: $(round(amount, digits=2))")
 end
 
-asignedVals = [Case(1,0.28), Case(3,0.10),Case(5,0.30)]
+asignedVals = [Case(-4,0.30), Case(4,0.20),Case(6,0.27)]
 missingValsOfP = [-2, 5]
 
 getPossibleResults(asignedVals, missingValsOfP)

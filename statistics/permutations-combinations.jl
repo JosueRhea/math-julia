@@ -10,8 +10,8 @@ function combinations(num, attime)
     println("Combinations ≌ $result")
 end
 
-# permutation(13,4)
-# combinations(big(52), 2)
+# permutation(big(26),3)
+# combinations(16, 13)
 
 ## Count of arrays with object that are different
 
@@ -36,8 +36,19 @@ function count(cases)
     total = sum(cases)
     result = factorial(total) / prod(factorial(x) for x in cases)
     println("Count is: $result")
+    return result
 end
 
-problem = [1,6,7]
+# total = 4 niñas y 9 niños y 10 eventos
+# den = 4 + 9 - 10 = [3,10]
+# probabilidad de sacar 3 niñas = 4 - 3 = [1,3]
+# probabilidad de sacar 7 niños = 9 - 7 = [2,7]
+den = [6,10]
+problem1 = [5,4]
+problem2 = [1,6]
 
-count(problem)
+result1 = count(problem1)
+result2 = count(problem2)
+totalDen = count(den)
+
+println("Result of selections witout replace: $(round((result1 * result2) / totalDen,digits=3))")
