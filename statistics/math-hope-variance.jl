@@ -9,6 +9,6 @@ function calculate(cases::Array{Case})
     println("Hope is $hopeOfX and variance is $varianceOfX")
 end
 
-problem = [Case(20,0.40),Case(30,0.15),Case(40,0.15), Case(50,0.15),Case(60,0.10), Case(70,0.05)]
+problem = [Case(-10,0.05),Case(0,0.20),Case(10,0.15), Case(20,0.15),Case(30,0.35), Case(40,0.10)]
 
 calculate(problem)

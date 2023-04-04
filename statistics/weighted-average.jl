@@ -10,5 +10,5 @@ function getWeightedAverage(cases)
     println("Weighted average is: $(round(denTotal / freqTotal, digits=2))")
 end
 
-problem = [Case(14, 2050), Case(18,1050),Case(14, 2600)]
+problem = [Case(14, 2050),Case(92, 93)] 
 getWeightedAverage(problem)

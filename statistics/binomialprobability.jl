@@ -13,7 +13,8 @@ function findProbability(π::Float64, ❌::Int64,ɳ::Int64)
     κ = ((1 - π)^γ)
     println("κ ",κ)
     β = α * ρ * κ
-    println(β)
+    println("Binomial probability: ", round(β, digits=3))
+    return β
 end
 
-findProbability(0.08, 4, 7)
+result1 = findProbability(0.16, 3, 6)

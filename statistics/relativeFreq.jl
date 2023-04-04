@@ -10,8 +10,8 @@ struct FreqResult
     size
 end
 
-data = [10,8, 18, 8,8, 9, 3, 16, 18, 15, 5,9, 13, 0, 19, 7, 17]
-freqsData = [Freq(0, 3), Freq(4, 7), Freq(8, 11), Freq(12, 15), Freq(16, 19)]
+data = [103,117,106,110,95,108,115,102,113,112,105,114,109,99,103,116,118,100]
+freqsData = [Freq(94.5, 100.5), Freq(100.5, 106.5), Freq(106.5, 112.5), Freq(112.5, 118.5)]
 
 function groupFreqs(problem, freqs)
     freqsParsed= []

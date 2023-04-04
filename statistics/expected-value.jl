@@ -8,7 +8,7 @@ function calculate(cases::Array{Case}, noOfPossibleResults)
     println("Result is $(round(result, digits=2))")
 end
 
-# problem = [Case(1, 1), Case(2,-6), Case(3,3), Case(4,-6), Case(5,5), Case(6,-6), Case(7,7), Case(8, -6), Case(9, 9), Case(10, -6)]
+# problem = [Case(1, -6), Case(2,2), Case(3,-6), Case(4,4), Case(5,-6), Case(6,6), Case(7,-6), Case(8, 8), Case(9, -6), Case(10, 10)]
 # calculate(problem, 10)
 
 function calculate2(cases::Array{Case}, price)
@@ -17,6 +17,6 @@ function calculate2(cases::Array{Case}, price)
     println("Result is $(round(price - result, digits=2))")
 end
 
-problem2 = [Case(4500,11), Case(0, 89)]
+problem2 = [Case(26500,2), Case(0, 98)]
 
-calculate2(problem2, 383)
+calculate2(problem2, 497)

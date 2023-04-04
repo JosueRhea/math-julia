@@ -32,4 +32,3 @@ condition1(x::Tuple{Int64, Int64}) = sum(x) > 8
 # condition2(x::Tuple{Int64, Int64}) = sum(x) % 3 == 0 || sum(x) % 5 == 0 || (sum(x) % 3 == 0 && sum(x) % 5 == 0)
 
 calculateProbability(condition1)
-calculateProbability(condition2)

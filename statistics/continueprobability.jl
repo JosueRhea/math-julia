@@ -23,8 +23,8 @@ function getArea(α, β, ŋ)
     println("Area of $ŋ is ", round(μ, digits=4))
 end
 
-α = 415
-β = 288
+α = 7105
+β = 8450
 # case1 = 9 - α
 
 # validateNumber(α, β, 1)
