@@ -11,7 +11,7 @@ function findProbability(μ::Float64, ❌::Integer, isCondition::Bool)
     return α
 end
 
-# findProbability(6.9, 2, true)
+findProbability(6.9, 2, true)
 
 function findProbabilityWithInRange(average, n, isLessThan)
     listOfProbabilities = []
@@ -23,4 +23,4 @@ function findProbabilityWithInRange(average, n, isLessThan)
     println("The probability of a event is $(round(result, digits=3))")
 end
 
-findProbabilityWithInRange((650/260), 1, false)
+findProbabilityWithInRange(0.16, 6, false)
