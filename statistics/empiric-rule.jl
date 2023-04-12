@@ -17,4 +17,4 @@ function calculateEmpiricRule(average, standardDeviation)
     println("Below average 3: ", belowAverage3)
 end
 
-calculateEmpiricRule(76.5, 5.2)
+calculateEmpiricRule(36.5, 5.2)

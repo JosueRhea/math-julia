@@ -15,7 +15,7 @@ findProbability(6.9, 2, true)
 
 function findProbabilityWithInRange(average, n, isLessThan)
     listOfProbabilities = []
-    while n >= 0
+    while n >= 1
         push!(listOfProbabilities, ℯ^(-average) * (average^n) / factorial(n))
         n -= 1
     end
@@ -23,4 +23,4 @@ function findProbabilityWithInRange(average, n, isLessThan)
     println("The probability of a event is $(round(result, digits=3))")
 end
 
-findProbabilityWithInRange(0.16, 6, false)
+findProbabilityWithInRange(0.20, 3, false)

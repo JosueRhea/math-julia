@@ -35,4 +35,4 @@ function calculateProbability(ȷ, μ)
     getLimits(ȷ, μ, 3)
 end
 
-calculateProbability(1140,300)
+calculateProbability(48,12)
